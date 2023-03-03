@@ -2,13 +2,14 @@ function ejercicio01(el){
     const articleEl = document.createElement("article");
     articleEl.innerHTML = `
     <h2>Ejercicio 1</h2>
-    <form class="form"
+    <form class="form">
         <div class="">
             <label for="edad">Ingrese su edad</label>
             <input class="edad" name="edad" type="">
         </div>
         <button>Puedo manejar?</button>
-        <p class="resultado"></p>
+    </form>
+    <p class="resultado"></p>
     `;
 
     const form = articleEl.querySelector(".form");
