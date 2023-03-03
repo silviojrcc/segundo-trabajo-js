@@ -7,6 +7,7 @@ function ejercicio01(el){
             <label for="edad">Ingrese su edad</label>
             <input class="edad" name="edad" type="number">
         </div>
+        <button>Puedo manejar?</button>
         <p class="resultado"></p>
     `;
 
@@ -28,4 +29,6 @@ function ejercicio01(el){
             alert("Debe ingresar una edad válida");
         }
     });
+
+    el.appendChild(articleEl);
 }
