@@ -5,7 +5,7 @@ function ejercicio01(el){
     <form class="form"
         <div class="">
             <label for="edad">Ingrese su edad</label>
-            <input class="edad" name="edad" type="number">
+            <input class="edad" name="edad" type="">
         </div>
         <button>Puedo manejar?</button>
         <p class="resultado"></p>
@@ -19,7 +19,7 @@ function ejercicio01(el){
         const resultadoEl = articleEl.querySelector(".resultado");
         const edadConduccion = 18;
 
-        if (!isNaN(edad)) {
+        if (!isNaN(edad) && edad > 1 && edad < 100) {
             if (edad >= edadConduccion) {
                 resultadoEl.textContent = "Usted puede manejar";
             } else {
