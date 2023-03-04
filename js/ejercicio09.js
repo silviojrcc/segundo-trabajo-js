@@ -2,7 +2,7 @@ function ejercicio09(el){
     const articleEl = document.createElement("article");
     articleEl.innerHTML = `
     <h2>Ejercicio 9</h2>
-    <div class="resultado"></div>
+    <p class="resultado"></p>
     `;
 
     const resultadoEl = articleEl.querySelector(".resultado");
