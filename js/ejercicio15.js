@@ -19,14 +19,17 @@ function ejercicio15(el){
         const resultado = articleEl.querySelector(".resultado");
         const texto = articleEl.querySelector(".texto").value;
         let numeroVocales = 0;
-
-        for (let i = 0; i < texto.length; i++) {
-            if (texto.charAt(i) === "a" || texto.charAt(i) === "e" || texto.charAt(i) === "i" || texto.charAt(i) === "o" || texto.charAt(i) === "u") {
-                numeroVocales++;
-            }        
+        
+        if (texto != "") {
+            for (let i = 0; i < texto.length; i++) {
+                if (texto.charAt(i) === "a" || texto.charAt(i) === "e" || texto.charAt(i) === "i" || texto.charAt(i) === "o" || texto.charAt(i) === "u") {
+                    numeroVocales++;
+                }        
+            }
+            resultado.textContent = `La cantidad de vocales que tiene el texto es de: ${numeroVocales}`;
+        } else {
+            resultado.textContent = "Debe ingresar un texto!";
         }
-
-        resultado.textContent = `La cantidad de vocales que tiene el texto es de: ${numeroVocales}`;
     });
     el.appendChild(articleEl);
 }
