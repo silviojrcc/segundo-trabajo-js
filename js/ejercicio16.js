@@ -17,12 +17,16 @@ function ejercicio16(el){
         e.preventDefault();
         const resultadoEl = articleEl.querySelector(".resultado");
         const frase = articleEl.querySelector(".frase").value;
-        let fraseAlReves = "";
-
-        for (let i = frase.length; i >= 0; i--) {
-            fraseAlReves += frase.charAt(i);
+        
+        if (frase != "") {
+            let fraseAlReves = "";
+            for (let i = frase.length; i >= 0; i--) {
+                fraseAlReves += frase.charAt(i);
+            }
+            resultadoEl.textContent = fraseAlReves;
+        } else {
+            resultadoEl.textContent = "Debe ingresar una frase valida!";
         }
-        resultadoEl.textContent = fraseAlReves;
     });
     el.appendChild(articleEl);
 }
