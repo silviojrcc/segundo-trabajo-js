@@ -1,6 +1,7 @@
 function ejercicio04(el){
     const articleEl = document.createElement("article");
     articleEl.innerHTML = `
+    <h2>Ejercicio 4</h2>
     <p class="resultado"></p>
     `
     const resultado = articleEl.querySelector(".resultado");
