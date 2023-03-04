@@ -5,15 +5,14 @@ function ejercicio02(el){
     <form class="form">
         <label for="nota">Ingrese Nota</label>
         <input class="nota" name="nota" type="text">
+        <button>Mostrar calificación</button>
     </form>
-    <button>Mostrar calificación</button>
     <p class="resultado"></p>
     `
 
     const form = articleEl.querySelector(".form");
     form.addEventListener("submit", (e) => {
         e.preventDefault();
-
         const nota = parseInt(articleEl.querySelector(".nota").value);
         const resultadoEl = articleEl.querySelector(".resultado");
 
