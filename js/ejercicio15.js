@@ -17,7 +17,7 @@ function ejercicio15(el){
         e.preventDefault();
 
         const resultado = articleEl.querySelector(".resultado");
-        const texto = articleEl.querySelector(".texto").value;
+        const texto = articleEl.querySelector(".texto").value.toLowerCase();
         let numeroVocales = 0;
         
         if (texto != "") {
