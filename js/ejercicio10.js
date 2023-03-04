@@ -1,6 +1,6 @@
 function ejercicio10(el) {
-    const articleEl = document.createElement("article");
-    articleEl.innerHTML = `
+  const articleEl = document.createElement("article");
+  articleEl.innerHTML = `
     <h2>Ejercicio 10</h2>
     <form class="form">
         <div>
@@ -16,27 +16,30 @@ function ejercicio10(el) {
     <p class="resultado"></p>
     `;
 
-    const formEl = articleEl.querySelector(".form");
-    formEl.addEventListener("submit", (e) => {
-        e.preventDefault();
+  const formEl = articleEl.querySelector(".form");
+  formEl.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-        const filas = parseInt(articleEl.querySelector(".filas").value);
-        const columnas = parseInt(articleEl.querySelector(".columnas").value);
-        const resultado = articleEl.querySelector(".resultado");
-        let texto = "";
+    const filas = parseInt(articleEl.querySelector(".filas").value);
+    const columnas = parseInt(articleEl.querySelector(".columnas").value);
+    const resultado = articleEl.querySelector(".resultado");
+    let texto = "";
 
-        let cantidadNumeros = filas * columnas;
+    if (!isNaN(filas) && !isNaN(columnas) && filas >= 1 && columnas >= 1 && filas <= 50 && columnas <= 50) {
+      let cantidadNumeros = filas * columnas;
 
-        for (let i = 0; i < filas; i++) {
-            for (let j = 0; j < columnas; j++) {
-                texto += ` ${cantidadNumeros} `;
-                cantidadNumeros--;
-            }
-            texto += "<br>"
+      for (let i = 0; i < filas; i++) {
+        for (let j = 0; j < columnas; j++) {
+          texto += ` ${cantidadNumeros} `;
+          cantidadNumeros--;
         }
+        texto += "<br>";
+      }
 
-        resultado.innerHTML = texto;
-
-    });
-    el.appendChild(articleEl);
+      resultado.innerHTML = texto;
+    } else {
+        resultado.textContent = "Debe ingresar numeros validos! entre 1 y 50"
+    }
+  });
+  el.appendChild(articleEl);
 }
