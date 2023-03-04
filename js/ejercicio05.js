@@ -1,8 +1,4 @@
 function ejercicio05(el) {
-  const articleEl = document.createElement("article");
-  articleEl.innerHTML = `
-   <p class="resultado"></p>
-   `;
   const letras = "TRWAGMYFPDXBNJZSQVHLCKE";
   do {
     const dni = parseInt(prompt("Ingrese un DNI"));
