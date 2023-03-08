@@ -19,7 +19,6 @@ function ejercicio17(el){
         const texto = articleEl.querySelector(".texto").value.toLowerCase();
         
         if (texto != "") {
-            let posicionPrimeraVocal = 0;
             for (let i = 0; i < texto.length; i++) {
                 if ("aeiou".includes(texto.charAt(i))) {
                      resultadoEl.textContent = `La primera vocal estaba en la posicion ${i}`;
