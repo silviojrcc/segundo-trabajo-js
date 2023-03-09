@@ -13,7 +13,7 @@ Este es el segundo trabajo práctico de bucles de JavaScript utilizando el DOM p
 
 Para utilizar este trabajo práctico, simplemente sigue estos pasos:
 
-1. Descarga o clona el repositorio en tu ordenador o haciendo click [aqui](https://silviojrcc.github.io)
+1. Descarga o clona el repositorio en tu ordenador o haciendo click [aqui](https://silviojrcc.github.io/segundo-trabajo-js/)
 2. Abre el archivo index.html en tu navegador web
 3. Haz clic en los botones para ver cómo funcionan las diferentes acciones
 
